@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://digimoda.kimhabork.com
+
+# Sitemaps
+Sitemap: https://digimoda.kimhabork.com/sitemap.xml
