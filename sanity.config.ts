@@ -20,8 +20,8 @@ export const PREVIEWABLE_DOCUMENT_TYPES: string[] = ["post"];
 console.log(projectId);
 
 export default defineConfig({
-  name: "default",
-  title: "Stablo Template",
+  name: "DiGiV3rse",
+  title: "DiGi Moda",
   basePath: "/studio",
   projectId: projectId,
   dataset: dataset,

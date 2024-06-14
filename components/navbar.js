@@ -25,16 +25,26 @@ export default function Navbar(props) {
       href: "/contact"
     },
     {
-      label: "Portfolio",
-      href: "https://kimhabork.com"
-    },
-    {
-      label: "Privacy Policy",
-      href: "https://kimhabork.com/privacy"
-    },
-    {
-      label: "Terms and Conditions",
-      href: "https://kimhabork.com/terms"
+      label: "Categories",
+      href: "#",
+      children: [
+        {
+          title: "Fashion",
+          path: "/category/fashion"
+        },
+        {
+          title: "Beauty",
+          path: "/category/beauty"
+        },
+        {
+          title: "Culture",
+          path: "/category/culture"
+        },
+        {
+          title: "Technology",
+          path: "/category/technology"
+        }
+      ]
     }
   ];
 
@@ -71,32 +81,20 @@ export default function Navbar(props) {
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-28 dark:hidden">
-                    {props.logo ? (
-                      <Image
-                        {...urlForImage(props.logo)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center">
-                        DiGi Moda
-                      </span>
-                    )}
+                    <Image
+                      src="/img/moda-light.png"
+                      alt="Logo"
+                      priority={true}
+                      sizes="(max-width: 640px) 100vw, 200px"
+                    />
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
-                    {props.logoalt ? (
-                      <Image
-                        {...urlForImage(props.logoalt)}
-                        alt="Logo"
-                        priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
-                      />
-                    ) : (
-                      <span className="block text-center">
-                       DiGi Moda
-                      </span>
-                    )}
+                    <Image
+                      src="/img/moda-dark.png"
+                      alt="Logo"
+                      priority={true}
+                      sizes="(max-width: 640px) 100vw, 200px"
+                    />
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
@@ -120,34 +118,6 @@ export default function Navbar(props) {
                       )}
                     </svg>
                   </Disclosure.Button>
-                </div>
-
-                <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
-                  {rightmenu.map((item, index) => (
-                    <Fragment key={`${item.label}${index}`}>
-                      {item.children && item.children.length > 0 ? (
-                        <DropdownMenu
-                          menu={item}
-                          key={`${item.label}${index}`}
-                          items={item.children}
-                        />
-                      ) : (
-                        <Link
-                          href={item.href}
-                          key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
-                          target={item.external ? "_blank" : ""}
-                          rel={item.external ? "noopener" : ""}>
-                          <span> {item.label}</span>
-                          {item.badge && (
-                            <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
-                              {item.badge}
-                            </span>
-                          )}
-                        </Link>
-                      )}
-                    </Fragment>
-                  ))}
                 </div>
               </div>
               <Disclosure.Panel>

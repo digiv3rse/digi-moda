@@ -44,7 +44,7 @@ export default function About({ authors, settings }) {
         <p>
           Stay updated with the latest fashion trends,
           cultural insights, beauty tips, and tech updates.
-          Join our stylish community and let's dive into the world of fashion together!
+          Join our stylish community and let&apos;s dive into the world of fashion together!
         </p>
         <p>
           <Link href="/contact">Get in touch</Link>

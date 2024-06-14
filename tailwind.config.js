@@ -11,13 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.neutral,
-        blue: "#005582",
-        red: "#ff1919",
-        green: "#3ae965",
-        orange: "#f2671d",
-        pink: "#ff6289",
-        yellow: "#ffb805"
+        gray: colors.neutral
       },
       fontFamily: {
         // to change, update font in _document.js

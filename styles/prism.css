@@ -46,7 +46,7 @@
 }
 
 .token.comment {
-  @apply text-gray-500;
+  @apply text-gray-700;
 }
 
 .token.deleted:not(.prefix) {
@@ -59,7 +59,7 @@
 }
 
 .token.deleted.prefix {
-  @apply text-gray-400 select-none;
+  @apply text-gray-200 select-none;
 }
 
 .token.inserted:not(.prefix) {

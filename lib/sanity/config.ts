@@ -14,7 +14,7 @@ export const projectId =
   (process.env.SANITY_STUDIO_PROJECT_ID as string);
 
 export const dataset =
-  process.env.NEXT_PUBLIC_SANITY_DATASET || ("production" as string);
+  process.env.NEXT_PUBLIC_SANITY_DATASET || ("digimoda" as string);
 
 // see https://www.sanity.io/docs/api-versioning for how versioning works
 export const apiVersion =
