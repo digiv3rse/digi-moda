@@ -4,7 +4,7 @@ import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
 import Author from "@/components/author";
 
-export default function Author() {
+export default function AuthorPage() {
   return (
     <>
       <Container className="!pt-0">
