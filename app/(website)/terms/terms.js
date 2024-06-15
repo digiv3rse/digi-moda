@@ -13,7 +13,7 @@ const cormorant_garamond = Cormorant_Garamond({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-cormorant_garamond',
-  weight: "300"
+  weight: "400"
 });
 
 export default function Terms() {
