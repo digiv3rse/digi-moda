@@ -57,11 +57,11 @@ export default function NavbarAlt(props) {
     },
     {
       label: "Privacy Policy",
-      href: "https://kimhabork.com/privacy"
+      href: "/privacy"
     },
     {
       label: "Terms and Conditions",
-      href: "https://kimhabork.com/terms"
+      href: "/terms"
     },
   ];
 

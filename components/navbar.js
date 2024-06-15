@@ -23,28 +23,6 @@ export default function Navbar(props) {
     {
       label: "Contact",
       href: "/contact"
-    },
-    {
-      label: "Categories",
-      href: "#",
-      children: [
-        {
-          title: "Fashion",
-          path: "/category/fashion"
-        },
-        {
-          title: "Beauty",
-          path: "/category/beauty"
-        },
-        {
-          title: "Culture",
-          path: "/category/culture"
-        },
-        {
-          title: "Technology",
-          path: "/category/technology"
-        }
-      ]
     }
   ];
 

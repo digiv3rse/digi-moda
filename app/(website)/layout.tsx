@@ -12,7 +12,7 @@ async function sharedMetaData(params) {
     title: {
       default:
         settings?.title ||
-        "DiGi Moda - Fashion Blog more new generations",
+        "DiGi Moda - Digital Fashion Blog for new generations",
     },
     description:
       settings?.description ||
