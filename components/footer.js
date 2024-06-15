@@ -5,7 +5,7 @@ import Image from "next/image";
 import { myLoader } from "@/utils/all";
 
 export default function Footer() {
-  const navigation = ["Home", "About", "Contact", "Blog"];
+  const navigation = ["Home", "About", "Contact"];
   return (
     <div className="relative">
       <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
