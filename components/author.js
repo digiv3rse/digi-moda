@@ -14,8 +14,8 @@ export default function Author(props) {
     notFound();
   }
 
-  const AuthorimageProps = post?.author?.image ?
-    urlForImage(post.author.image) :
+  const AuthorimageProps = author?.mainImage
+    ? urlForImage(author.mainImage) :
     null;
 
   return (

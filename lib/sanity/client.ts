@@ -8,6 +8,7 @@ import {
   pathquery,
   allauthorsquery,
   authorsquery,
+  authorquery,
   postsbyauthorquery,
   postsbycatquery,
   catpathquery,
@@ -26,9 +27,9 @@ if (!projectId) {
 /**
  * Checks if it's safe to create a client instance, as `@sanity/client` will throw an error if `projectId` is false
  */
-const client = projectId
-  ? createClient({ projectId, dataset, apiVersion, useCdn })
-  : null;
+const client = projectId ?
+  createClient({ projectId, dataset, apiVersion, useCdn }) :
+  null;
 
 export const fetcher = async ([query, params]) => {
   return client ? client.fetch(query, params) : [];
@@ -94,6 +95,13 @@ export async function getAllAuthors() {
     return (await client.fetch(allauthorsquery)) || [];
   }
   return [];
+}
+
+export async function getAuthorBySlug() {
+  if (client) {
+    return (await client.fetch(authorquery, { slug })) || {};
+  }
+  return {};
 }
 
 // Category
