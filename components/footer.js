@@ -6,7 +6,6 @@ import { myLoader } from "@/utils/all";
 
 export default function Footer() {
   const navigation = ["Home", "About", "Contact", "Blog"];
-  const legal = ["Terms", "Privacy"];
   return (
     <div className="relative">
       <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
@@ -26,15 +25,18 @@ export default function Footer() {
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {legal.map((item, index) => (
                 <Link
-                  key={index}
-                  href="/"
+                  href="/terms"
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                  Terms and Conditions
                 </Link>
-              ))}
+                <Link
+                  href="/privacy"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                >
+                  Privacy Policy
+                </Link>
             </div>
           </div>
           <div className="">
