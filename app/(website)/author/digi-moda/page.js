@@ -19,7 +19,7 @@ export default function DiGiModa() {
                 <h1 className="text-xl text-center font-bold text-gray-700 md:text-2xl dark:text-white lg:text-4xl lg:leading-snug">
                   DIGI MODA
                 </h1>
-                <div className="px-8 mt-4 mx-6 text-lg md:text-xl text-gray-700 text-center dark:text-white lg:text-2xl lg:leading-snug justify-center text-pretty">
+                <div className="px-2 mt-4 mx-6 text-lg md:text-xl text-gray-700 text-center dark:text-white lg:text-2xl lg:leading-snug justify-center text-pretty">
                   <p className="w-auto">
                     Stay updated on all things Fashion, Culture, Beauty, and Technology with insights from DiGi Moda.
                   </p>
