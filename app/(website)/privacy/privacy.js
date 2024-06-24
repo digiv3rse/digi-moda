@@ -40,8 +40,8 @@ export default function Privacy() {
           </p>
         </section>
         <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Interpretation and Definitions</h2>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Interpretation</h2>
+          <h2 className="text-2xl text-black dark:text-white md:text-3xl font-bold mb-4">Interpretation and Definitions</h2>
+          <h2 className="text-2xl text-black dark:text-white md:text-xl font-bold mb-4">Interpretation</h2>
           <p className="mb-4 text-black dark:text-white">
             The words of which the initial letter is capitalized have
             meanings defined under the following conditions. The
@@ -49,7 +49,7 @@ export default function Privacy() {
             regardless of whether they appear in singular or in
             plural.
           </p>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Definitions</h2>
+          <h2 className="text-2xl text-black dark:text-white md:text-xl font-bold mb-4">Definitions</h2>
           <p className="mb-4 text-black dark:text-white">
             For the purposes of this Privacy Policy:
           </p>

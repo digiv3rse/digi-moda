@@ -23,6 +23,7 @@ export default function Layout(props) {
         title={props.title}
         description={props.description}
         canonical={props.url}
+        google-site-verification="yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M"
         openGraph={{
           url: props.url,
           title: props.title,
@@ -38,8 +39,8 @@ export default function Layout(props) {
           site_name: props.title
         }}
         twitter={{
-          handle: "@surjithctly",
-          site: "@surjithctly",
+          handle: "@digi_moda",
+          site: "@digi_moda",
           cardType: "summary_large_image"
         }}
       />
