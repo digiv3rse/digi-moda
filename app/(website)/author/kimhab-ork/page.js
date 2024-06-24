@@ -13,13 +13,13 @@ export default function Kimhab() {
           <div className="grid grid-cols-1 gap-4 px-0 py-4 content-center">
             <div className="hero-content flex flex-col justity-center">
               <figure className="flex justify-center items-center rounded-full pb-6">
-                <Image src="/public/img/kimhab.jpeg" className="max-w-sm rounded-full bg-center bg-cover" />
+                <Image src="/img/kimhab.jpg" className="max-w-sm rounded-full bg-center bg-cover" />
               </figure>
               <div className="flex-col py-2">
                 <h1 className="text-xl text-center font-bold text-gray-700 md:text-2xl dark:text-white lg:text-4xl lg:leading-snug">
                   KIMHAB ORK
                 </h1>
-                <div className="px-8 mt-4 mx-12 text-lg md:text-xl text-gray-700 text-center dark:text-white lg:text-2xl lg:leading-snug justify-center text-pretty">
+                <div className="px-8 mt-4 mx-6 text-lg md:text-xl text-gray-700 text-center dark:text-white lg:text-2xl lg:leading-snug justify-center text-pretty">
                   <p className="w-auto">
                     A fashion designer and educator who has made significant contributions to the fashion world. With a diverse educational background and a blend of business acumen and artistic flair. Currently, He is sharing his knowledge as a lecturer at two prestigious universities, inspiring the next generation of fashion designers.
                   </p>
