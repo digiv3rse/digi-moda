@@ -5,22 +5,30 @@ import Image from "next/image";
 import { myLoader } from "@/utils/all";
 
 export default function Footer() {
-  const navigation = ["Home", "About", "Contact"];
   return (
     <div className="relative">
       <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
         <div className="grid max-w-screen-xl grid-cols-2 gap-8 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {navigation.map((item, index) => (
                 <Link
-                  key={index}
                   href="/"
                   className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
                 >
-                  {item}
+                Home
                 </Link>
-              ))}
+                <Link
+                  href="/about"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                >
+                About
+                </Link>
+                <Link
+                  href="/contact"
+                  className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700"
+                >
+                Contact
+                </Link>
             </div>
           </div>
           <div>
