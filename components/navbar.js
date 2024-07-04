@@ -60,7 +60,7 @@ export default function Navbar(props) {
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-28 dark:hidden">
                     <Image
-                      src="/img/moda-light.png"
+                      src="/img/logo-light.svg"
                       alt="Logo"
                       priority={true}
                       sizes="(max-width: 640px) 100vw, 200px"
@@ -68,7 +68,7 @@ export default function Navbar(props) {
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
                     <Image
-                      src="/img/moda-dark.png"
+                      src="/img/logo-dark.svg"
                       alt="Logo"
                       priority={true}
                       sizes="(max-width: 640px) 100vw, 200px"
