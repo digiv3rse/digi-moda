@@ -93,11 +93,11 @@ export default function Terms() {
                         <li>
                             <p className="text-black dark:text-white mb-4">Website refers to DiGi Moda, accessible from{" "}
                                 <a
-                                    href="https://digimoda.kimhabork.com"
+                                    href="https://digimoda.kimhabork.site"
                                     rel="external nofollow noopener"
                                     target="_blank"
                                 >
-                                    https://digimoda.kimhabork.com
+                                    https://digimoda.kimhabork.site
                                 </a>
                             </p>
                         </li>
@@ -304,7 +304,7 @@ export default function Terms() {
                         us:
                     </p>
                     <ul>
-                        <li>By email: support@kimhabork.com</li>
+                        <li>By email: support@kimhabork.site</li>
                     </ul>
                 </section>
             </div>

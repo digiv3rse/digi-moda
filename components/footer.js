@@ -81,7 +81,7 @@ export default function Footer() {
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. by{" "}
           <a
-            href="https://digimoda.kimhabork.com/"
+            href="https://digimoda.kimhabork.site/"
             target="_blank"
             rel="noopener"
           >

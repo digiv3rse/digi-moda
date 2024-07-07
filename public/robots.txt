@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://digimoda.kimhabork.com
+Host: https://digimoda.kimhabork.site
 
 # Sitemaps
-Sitemap: https://digimoda.kimhabork.com/sitemap.xml
+Sitemap: https://digimoda.kimhabork.site/sitemap.xml

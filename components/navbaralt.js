@@ -53,7 +53,7 @@ export default function NavbarAlt(props) {
     },
     {
       label: "Portfolio",
-      href: "https://kimhabork.com"
+      href: "https://kimhabork.site"
     },
     {
       label: "Privacy Policy",

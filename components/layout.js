@@ -39,8 +39,8 @@ export default function Layout(props) {
           site_name: props.title
         }}
         twitter={{
-          handle: "@digi_moda",
-          site: "@digi_moda",
+          handle: "@digimoda_kh",
+          site: "@digimoda_kh",
           cardType: "summary_large_image"
         }}
       />

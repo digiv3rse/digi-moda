@@ -138,10 +138,10 @@ export default function Privacy() {
               <p className="mb-4 text-black dark:text-white">
                 Website refers to DiGi Moda, accessible from{" "}
                 <a
-                  href="https://digimoda.kimhabork.com"
+                  href="https://digimoda.kimhabork.site"
                   rel="external nofollow noopener"
                   target="_blank">
-                  https://digimoda.kimhabork.com
+                  https://digimoda.kimhabork.site
                 </a>
               </p>
             </li>
