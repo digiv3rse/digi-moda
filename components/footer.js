@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="relative">
       <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
-        <div className="grid max-w-screen-xl grid-cols-2 gap-8 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+        <div className="grid max-w-screen-xl grid-cols-2 gap-8 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-gray-800 lg:grid-cols-5">
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
                 <Link
@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="">
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/digi_moda"
+                href="https://twitter.com/digimoda_kh"
                 target="_blank"
                 rel="noopener"
               >
@@ -59,7 +59,7 @@ export default function Footer() {
                 <Twitter />
               </a>
               <a
-                href="https://instagram.com/digi_moda"
+                href="https://instagram.com/digimoda_kh"
                 target="_blank"
                 rel="noopener"
               >
