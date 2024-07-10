@@ -23,7 +23,15 @@ export default function Navbar(props) {
     {
       label: "Contact",
       href: "/contact"
-    }
+    },
+    {
+      label: "Category",
+      href: "/category"
+    },
+    {
+      label: "Archive",
+      href: "/archive"
+    },
   ];
 
   const mobilemenu = [...leftmenu];
@@ -59,20 +67,32 @@ export default function Navbar(props) {
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-28 dark:hidden">
-                    <Image
-                      src="/img/logo-light.svg"
-                      alt="Logo"
-                      priority={true}
-                      sizes="(max-width: 640px) 100vw, 200px"
-                    />
+                    {props.logo ? (
+                      <Image
+                        {...urlForImage(props.logo)}
+                        alt="Logo"
+                        priority={true}
+                        sizes="(max-width: 640px) 100vw, 200px"
+                      />
+                    ) : (
+                      <span className="block text-center">
+                        DiGi Moda
+                      </span>
+                    )}
                   </Link>
                   <Link href="/" className="hidden w-28 dark:block">
-                    <Image
-                      src="/img/logo-dark.svg"
-                      alt="Logo"
-                      priority={true}
-                      sizes="(max-width: 640px) 100vw, 200px"
-                    />
+                    {props.logoalt ? (
+                      <Image
+                        {...urlForImage(props.logoalt)}
+                        alt="Logo"
+                        priority={true}
+                        sizes="(max-width: 640px) 100vw, 200px"
+                      />
+                    ) : (
+                      <span className="block text-center">
+                        DiGi Moda
+                      </span>
+                    )}
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"

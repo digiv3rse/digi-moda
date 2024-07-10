@@ -21,7 +21,7 @@ export default function Privacy() {
     <Container>
       <div className="mx-auto w-full max-w-4xl px-4 py-12 md:px-6 md:py-16">
         <header className="mb-8 md:mb-12">
-          <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <h1 className="text-3xl text-black dark:text-white font-bold tracking-tight md:text-4xl">
             Privacy Policy
           </h1>
         </header>
@@ -156,9 +156,9 @@ export default function Privacy() {
           </ul>
         </section>
         <section className="mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Collecting and Using Your Personal Data</h2>
-          <h2 className="text-2xl md:text-xl font-bold mb-4">Types of Data Collected</h2>
-          <h4>Personal Data</h4>
+          <h2 className="text-2xl text-black dark:text-white md:text-3xl font-bold mb-4">Collecting and Using Your Personal Data</h2>
+          <h2 className="text-2xl text-black dark:text-white md:text-xl font-bold mb-4">Types of Data Collected</h2>
+          <h4 className="text-black dark:text-white">Personal Data</h4>
           <p className="mb-4 text-black dark:text-white">
             While using Our Service, We may ask You to provide Us with
             certain personally identifiable information that can be
@@ -185,8 +185,8 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
-          <h4>Usage Data</h4>
+        <section className="text-black dark:text-white mb-8 md:mb-12">
+          <h4 className="text-black dark:text-white">Usage Data</h4>
           <p className="mb-4 text-black dark:text-white">
             Usage Data is collected automatically when using the
             Service.
@@ -227,7 +227,7 @@ export default function Privacy() {
             <li>LinkedIn</li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             If You decide to register through or otherwise grant us
             access to a Third-Party Social Media Service, We may
@@ -254,7 +254,7 @@ export default function Privacy() {
             analyze Our Service. The technologies We use may include:
           </p>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <ul>
             <li>
               Cookies or Browser Cookies. A cookie is a small file
@@ -277,7 +277,7 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             Cookies can be &quot;Persistent&quot; or
             &quot;Session&quot; Cookies. Persistent Cookies remain on
@@ -347,7 +347,7 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             For more information about the cookies we use and your
             choices regarding cookies, please visit our Cookies Policy
@@ -433,7 +433,7 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <p className="mb-4 text-black dark:text-white">
             We may share Your personal information in the following
             situations:
@@ -482,7 +482,7 @@ export default function Privacy() {
             </li>
           </ul>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <h2 className="text-2xl md:text-xl font-bold mb-4">Retention of Your Personal Data</h2>
           <p className="mb-4 text-black dark:text-white">
             The Company will retain Your Personal Data only for as
@@ -527,7 +527,7 @@ export default function Privacy() {
             information.
           </p>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <h2 className="text-2xl md:text-xl font-bold mb-4">Delete Your Personal Data</h2>
           <p className="mb-4 text-black dark:text-white">
             You have the right to delete or request that We assist in
@@ -598,7 +598,7 @@ export default function Privacy() {
             security.
           </p>
         </section>
-        <section className="mb-8 md:mb-12">
+        <section className="text-black dark:text-white mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Children&quot;s Privacy</h2>
           <p className="mb-4 text-black dark:text-white">
             Our Service does not address anyone under the age of 13.

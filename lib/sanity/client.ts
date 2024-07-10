@@ -104,7 +104,7 @@ export async function getAuthorBySlug() {
   return {};
 }
 
-// Category
+// Category .getAllCategories getPostsByCategory
 
 export async function getAllCategories() {
   if (client) {
