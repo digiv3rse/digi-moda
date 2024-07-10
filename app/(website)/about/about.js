@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function About({ authors, settings }) {
   return (
     <Container>
-      <h1 className="text-brand-primary mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
+      <h1 className="text-white mb-3 mt-2 text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
         About
       </h1>
       <div className="text-center">
@@ -36,7 +36,7 @@ export default function About({ authors, settings }) {
         })}
       </div>
 
-      <div className="prose mx-auto mt-14 text-center dark:prose-invert">
+      <div className="prose mx-auto mt-14 text-center text-black dark:text-white dark:prose-invert">
         <p>
           DiGi Moda was established with the core belief that fashion serves as a universal language that transcends boundaries, cultures, and identities.
           Fashion&apos;s true essence lies in its power to bring people together, fostering a sense of unity and belonging that extends beyond the surface.
