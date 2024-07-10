@@ -13,13 +13,12 @@ export default function Error({
     console.error(error)
   }, [error])
   return (
- <>
-   <Container>
+    <Container>
      <div className="items-center fill-none -center items-center content-center w-96 h-96-center block pl-2.5 pr-2.5">
-       <div className="fill-none -center items-center content-center w-96 h-96">
+       <div className="fill-none-center items-center content-center w-96 h-96">
          <svg className="w-full h-screen" viewBox="0 0 960 300">
            <symbol id="s-fill-none ">
-             <fill-none fillNoneAnchor="middle" x={50%}y={50%}>404</fill-none>
+             <fillNone fillNoneAnchor="middle" x="50%" y="50%">404</fillNone>
            </symbol>
              <g className="g-ants">
                <use xlink:href="#s-fill-none " className="fill-none "></use>
@@ -38,6 +37,5 @@ export default function Error({
        </div>
      </div>
   </Container>
-</>
-  )
+  );
 }
