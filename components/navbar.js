@@ -23,18 +23,25 @@ export default function Navbar(props) {
     {
       label: "Contact",
       href: "/contact"
-    },
-    {
-      label: "Category",
-      href: "/category"
-    },
+    }
+  ];
+
+  const rightmenu = [
     {
       label: "Archive",
       href: "/archive"
     },
+    {
+      label: "Portfolio",
+      href: "https://kimhabork.site"
+    },
+    {
+      label: "Gallery",
+      href: "https://gallery.kimhabork.site"
+    }
   ];
 
-  const mobilemenu = [...leftmenu];
+  const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
     <Container>
@@ -69,10 +76,12 @@ export default function Navbar(props) {
                   <Link href="/" className="w-28 dark:hidden">
                     {props.logo ? (
                       <Image
-                        {...urlForImage(props.logo)}
+                        src="/img/logo-light.svg"
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        width={220}
+                        height={100}
+                        sizes="(max-width: 640px)"
                       />
                     ) : (
                       <span className="block text-center">
@@ -80,13 +89,15 @@ export default function Navbar(props) {
                       </span>
                     )}
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
+                  <Link href="/" className="hidden w-[120px] dark:block">
                     {props.logoalt ? (
                       <Image
-                        {...urlForImage(props.logoalt)}
+                        src="/img/logo-dark.svg"
                         alt="Logo"
                         priority={true}
-                        sizes="(max-width: 640px) 100vw, 200px"
+                        width={220}
+                        height={100}
+                        sizes="(max-width: 640px)"
                       />
                     ) : (
                       <span className="block text-center">
@@ -96,7 +107,7 @@ export default function Navbar(props) {
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
-                    className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-500 focus:outline-none dark:text-gray-300 md:hidden ">
+                    className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-700 focus:outline-none dark:text-gray-300 md:hidden ">
                     <svg
                       className="h-6 w-6 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
@@ -116,6 +127,33 @@ export default function Navbar(props) {
                       )}
                     </svg>
                   </Disclosure.Button>
+                </div>
+                <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
+                  {rightmenu.map((item, index) => (
+                    <Fragment key={`${item.label}${index}`}>
+                      {item.children && item.children.length > 0 ? (
+                        <DropdownMenu
+                          menu={item}
+                          key={`${item.label}${index}`}
+                          items={item.children}
+                        />
+                      ) : (
+                        <Link
+                          href={item.href}
+                          key={`${item.label}${index}`}
+                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          target={item.external ? "_blank" : ""}
+                          rel={item.external ? "noopener" : ""}>
+                          <span> {item.label}</span>
+                          {item.badge && (
+                            <span className="ml-2 rounded bg-blue-100 px-2 py-0.5 text-xs font-semibold text-blue-600 dark:bg-cyan-200 dark:text-blue-800 ">
+                              {item.badge}
+                            </span>
+                          )}
+                        </Link>
+                      )}
+                    </Fragment>
+                  ))}
                 </div>
               </div>
               <Disclosure.Panel>
