@@ -6,8 +6,7 @@ import { myLoader } from "@/utils/all";
 
 export default function Footer() {
   return (
-    <Container className="mt-4 mx-auto">
-      <div className="mx-auto max-w-screen-lg items-center justify-center px-5 py-5 lg:py-8 xl:px-8">
+    <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
         <div className="mb-4 grid grid-flow-row gap-2">
           <div className="mt-5 flex flex-row justify-center px-4">
             <Link
@@ -85,7 +84,6 @@ export default function Footer() {
             <ThemeSwitch />
           </div>
         </div>
-      </div>
     </Container>
   );
 }
