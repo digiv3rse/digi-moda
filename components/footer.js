@@ -6,7 +6,7 @@ import { myLoader } from "@/utils/all";
 
 export default function Footer() {
   return (
-    <Container>
+    <Container className="mt-4 mx-auto">
       <div className="mx-auto max-w-screen-lg items-center justify-center px-5 py-5 lg:py-8 xl:px-8">
         <div className="mb-4 grid grid-flow-row gap-2">
           <div className="mt-5 flex flex-row justify-center px-4">
