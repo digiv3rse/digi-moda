@@ -37,7 +37,6 @@ export default defineConfig({
     unsplashImageAsset(),
     table(),
     codeInput(),
-    cloudinaryAssetSourcePlugin()
 
   ],
 
