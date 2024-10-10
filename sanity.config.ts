@@ -36,7 +36,9 @@ export default defineConfig({
     visionTool(),
     unsplashImageAsset(),
     table(),
-    codeInput()
+    codeInput(),
+    cloudinaryAssetSourcePlugin()
+
   ],
 
   schema: {
