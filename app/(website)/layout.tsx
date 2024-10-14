@@ -67,7 +67,7 @@ export default async function Layout({ children, params }) {
       <div>{children}</div>
 
       <Footer {...settings} />
-      <GoogleAnalytics gaId="G-8GDENFPPNN" />
+      <GoogleAnalytics gaId="G-97HEWFM6VB" />
     </>
   );
 }
