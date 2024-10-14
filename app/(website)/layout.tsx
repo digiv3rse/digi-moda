@@ -49,25 +49,27 @@ export default async function Layout({ children, params }) {
   const settings = await getSettings();
   return (
     <>
-      <Head>
-        <meta name="google-site-verification" content="yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M" />
-        <link rel="icon" sizes="48x48" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/icon/android-chrome-512x512.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-chrome-192x192.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
-      <Navbar {...settings} />
+      <html lang="en">
+        <Head>
+          <meta name="google-site-verification" content="yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M" />
+          <link rel="icon" sizes="48x48" href="/favicon.ico" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+          <link rel="icon" type="image/png" sizes="512x512" href="/icon/android-chrome-512x512.png" />
+          <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-chrome-192x192.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
+        </Head>
+        <Navbar {...settings} />
 
-      <div>{children}</div>
+        <div>{children}</div>
 
-      <Footer {...settings} />
-      <GoogleAnalytics gaId="G-97HEWFM6VB" />
+       <Footer {...settings} />
+        <GoogleAnalytics gaId="G-97HEWFM6VB" />
+      <html lang="en">
     </>
   );
 }
