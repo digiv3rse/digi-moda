@@ -6,14 +6,20 @@ export default function Label(props) {
     blue: "text-blue-600",
     orange: "text-orange-700",
     purple: "text-purple-600",
-    pink: "text-pink-600"
+    pink: "text-pink-600",
+    red: "text-red-600",
+    cyan: "text-cyan-600",
+    yellow: "text-yellow-600"
   };
   const bgcolor = {
     green: "bg-emerald-50",
     blue: "bg-blue-50",
     orange: "bg-orange-50",
     purple: "bg-purple-50",
-    pink: "bg-pink-50"
+    pink: "bg-pink-50",
+    red: "bg-red-50",
+    cyan: "bg-cyan-50",
+    yellow: "bg-yellow-50"
   };
   const margin = props.nomargin;
 
