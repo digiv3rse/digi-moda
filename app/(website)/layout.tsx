@@ -52,6 +52,8 @@ export default async function Layout({ children, params }) {
       <html lang="en">
         <Head>
           <meta name="google-site-verification" content="yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M" />
+          <meta property="og:site_name" content="DiGi Moda" />
+          <meta property="og:url" content="https://digimoda.site" />
           <link rel="icon" sizes="48x48" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
