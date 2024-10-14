@@ -69,7 +69,7 @@ export default async function Layout({ children, params }) {
 
        <Footer {...settings} />
         <GoogleAnalytics gaId="G-97HEWFM6VB" />
-      <html lang="en">
+      </html>
     </>
   );
 }
