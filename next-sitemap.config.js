@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl:
-    process.env.SITE_URL || "https://digimoda.kimhabork.site",
+    process.env.SITE_URL || "https://digimoda.site",
   generateRobotsTxt: true // (optional)
   // ...other options
 };
