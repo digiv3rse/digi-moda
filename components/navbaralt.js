@@ -40,6 +40,10 @@ export default function NavbarAlt(props) {
         {
           title: "Technology",
           path: "/category/technology"
+        },
+        {
+          title: "Business",
+          path: "/category/business"
         }
       ]
     },
