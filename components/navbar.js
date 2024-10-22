@@ -28,8 +28,8 @@ export default function Navbar(props) {
 
   const rightmenu = [
     {
-      label: "Archive",
-      href: "/archive"
+      label: "Posts",
+      href: "/posts"
     },
     {
       label: "Portfolio",
@@ -37,7 +37,7 @@ export default function Navbar(props) {
     },
     {
       label: "Gallery",
-      href: "https://gallery.kimhabork.site"
+      href: "https://gallery.digimoda.site"
     }
   ];
 
@@ -63,7 +63,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="md:text-md px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -89,7 +89,9 @@ export default function Navbar(props) {
                       </span>
                     )}
                   </Link>
-                  <Link href="/" className="hidden w-[120px] dark:block">
+                  <Link
+                    href="/"
+                    className="hidden w-[120px] dark:block">
                     {props.logoalt ? (
                       <Image
                         src="/img/logo-dark.svg"
