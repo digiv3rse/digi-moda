@@ -6,9 +6,10 @@ import { myLoader } from "@/utils/all";
 
 export default function Footer() {
   return (
-    <Container className="mt-10 border-t border-gray-100 dark:border-gray-800">
-        <div className="mb-4 grid grid-flow-row gap-2">
-          <div className="mt-5 flex flex-row justify-center px-4">
+    <div className="mt-auto">
+      <Container className="mx-auto mt-16 justify-center items-center border-t border-gray-100 py-8 dark:border-gray-800">
+        <div className="grid grid-cols-1 gap-4 px-4 md:px-6 mt-4">
+          <div className="flex flex-row justify-center">
             <Link
               href="/"
               className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
@@ -26,8 +27,8 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="mb-2 grid grid-flow-row gap-2">
-          <div className="mt-2 flex flex-row justify-center px-4">
+        <div className="grid grid-cols-1 gap-4 px-4 md:px-6 mt-4">
+          <div className="flex flex-row justify-center">
             <Link
               href="https://kimhabork.site"
               className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-800 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
@@ -45,8 +46,8 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="pt-2">
-          <div className="mt-2 flex justify-center gap-2 space-x-5 text-gray-800 dark:text-gray-300">
+        <div className="px-4 mt-4 md:px-6">
+          <div className="flex justify-center gap-2 space-x-5 text-gray-800 dark:text-gray-300">
             <a
               href="https://twitter.com/digimoda_kh"
               target="_blank"
@@ -71,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mx-auto mt-2 max-w-screen-lg content-center items-center justify-center px-8 pb-5 pt-2 text-gray-800 dark:text-gray-300 lg:py-8 xl:px-5">
-          <div className="py-5 text-center text-md">
+          <div className="text-md py-5 text-center">
             Copyright © {new Date().getFullYear()}. by{" "}
             <a
               href="https://digimoda.kimhabork.site/"
@@ -84,7 +85,8 @@ export default function Footer() {
             <ThemeSwitch />
           </div>
         </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
