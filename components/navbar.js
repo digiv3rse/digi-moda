@@ -63,7 +63,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="md:text-md px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="md:text-lg px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -143,7 +143,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="md:text-lg px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           <span> {item.label}</span>
@@ -173,7 +173,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="w-full px-5 py-2 text-sm font-medium text-gray-600 hover:text-blue-500 dark:text-gray-400"
+                          className="w-full px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -203,7 +203,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
               "flex items-center gap-x-1 rounded-md px-5 py-2 text-sm font-medium  outline-none transition-all focus:outline-none focus-visible:text-indigo-500 focus-visible:ring-1 dark:focus-visible:bg-gray-800",
               open
                 ? "text-blue-500 hover:text-blue-500"
-                : " text-gray-600 dark:text-gray-400 ",
+                : " text-gray-800 dark:text-gray-200 ",
               mobile ? "w-full px-4 py-2 " : "inline-block px-4 py-2"
             )}>
             <span>{menu.label}</span>
