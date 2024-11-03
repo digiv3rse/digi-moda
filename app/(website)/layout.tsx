@@ -4,6 +4,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import Navbar from "@/components/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
+import Script from "next/script";
 
 async function sharedMetaData(params) {
   const settings = await getSettings();
@@ -64,6 +65,8 @@ export default async function Layout({ children, params }) {
           <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <meta name="google-adsense-account" content="ca-pub-6589975999855442" />
+          <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6589975999855442" />
         </Head>
         <Navbar {...settings} />
 
