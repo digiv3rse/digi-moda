@@ -75,7 +75,7 @@ export default function Footer() {
           <div className="text-md py-5 text-center">
             Copyright © {new Date().getFullYear()}. by{" "}
             <a
-              href="https://digimoda.kimhabork.site/"
+              href="https://digimoda.site/"
               target="_blank"
               rel="noopener">
               DiGi Moda. All rights reserved.

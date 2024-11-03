@@ -93,11 +93,11 @@ export default function Terms() {
                         <li>
                             <p className="text-black dark:text-white mb-4">Website refers to DiGi Moda, accessible from{" "}
                                 <a
-                                    href="https://digimoda.kimhabork.site"
+                                    href="https://digimoda.site"
                                     rel="external nofollow noopener"
                                     target="_blank"
                                 >
-                                    https://digimoda.kimhabork.site
+                                    https://digimoda.site
                                 </a>
                             </p>
                         </li>
