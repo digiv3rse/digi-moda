@@ -7,3 +7,5 @@ Host: https://digimoda.kimhabork.site
 
 # Sitemaps
 Sitemap: https://digimoda.kimhabork.site/sitemap.xml
+
+google.com, pub-6589975999855442, DIRECT, f08c47fec0942fa0
