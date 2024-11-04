@@ -1,7 +1,12 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl:
-    process.env.SITE_URL || "https://digimoda.site",
-  generateRobotsTxt: true // (optional)
-  // ...other options
+  siteUrl: "https://digimoda.site",
+  generateRobotsTxt: true,
+  changefreq: "daily",
+  priority: 0.7,
+  sitemapSize: 5000,
+  generateRobotsTxt: true,
+  alternateRefs: [
+    "https://digimoda.site/sitemap-0.xml",
+  ]
 };

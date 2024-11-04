@@ -23,7 +23,6 @@ export default function Layout(props) {
         title={props.title}
         description={props.description}
         canonical={props.url}
-        google-site-verification="yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M"
         openGraph={{
           url: props.url,
           title: props.title,

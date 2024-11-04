@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  crossOrigin: "anonymous",
   images: {
     formats: ["image/avif", "image/webp"],
     dangerouslyAllowSVG: true,

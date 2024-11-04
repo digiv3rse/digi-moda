@@ -97,7 +97,7 @@ export async function getAllAuthors() {
   return [];
 }
 
-export async function getAuthorBySlug() {
+export async function getAuthorBySlug(slug) {
   if (client) {
     return (await client.fetch(authorquery, { slug })) || {};
   }

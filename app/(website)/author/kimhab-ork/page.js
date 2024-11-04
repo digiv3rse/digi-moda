@@ -13,7 +13,7 @@ export default function Kimhab() {
           <div className="grid grid-cols-1 gap-4 px-0 py-4 content-center">
             <div className="hero-content flex flex-col justity-center">
               <figure className="flex justify-center items-center rounded-full pb-6">
-                <Image src="/img/kimhab.jpg" className="max-w-sm rounded-full bg-center bg-cover" />
+                <Image src="/img/kimhab.jpg" className="max-w-sm rounded-full bg-center bg-cover" alt="Kimhab Ork" />
               </figure>
               <div className="flex-col py-2">
                 <h1 className="text-xl text-center font-bold text-gray-700 md:text-2xl dark:text-white lg:text-4xl lg:leading-snug">
