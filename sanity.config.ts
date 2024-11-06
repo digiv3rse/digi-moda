@@ -36,8 +36,7 @@ export default defineConfig({
     visionTool(),
     unsplashImageAsset(),
     table(),
-    codeInput(),
-
+    codeInput()
   ],
 
   schema: {

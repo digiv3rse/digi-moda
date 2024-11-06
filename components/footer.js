@@ -7,8 +7,8 @@ import { myLoader } from "@/utils/all";
 export default function Footer() {
   return (
     <div className="mt-auto">
-      <Container className="mx-auto mt-16 justify-center items-center border-t border-gray-100 py-8 dark:border-gray-800">
-        <div className="grid grid-cols-1 gap-4 px-4 md:px-6 mt-4">
+      <Container className="mx-auto mt-16 items-center justify-center border-t border-gray-100 py-8 dark:border-gray-800">
+        <div className="mt-4 grid grid-cols-1 gap-4 px-4 md:px-6">
           <div className="flex flex-row justify-center">
             <Link
               href="/"
@@ -27,7 +27,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 px-4 md:px-6 mt-4">
+        <div className="mt-4 grid grid-cols-1 gap-4 px-4 md:px-6">
           <div className="flex flex-row justify-center">
             <Link
               href="https://kimhabork.site"
@@ -46,7 +46,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="px-4 mt-4 md:px-6">
+        <div className="mt-4 px-4 md:px-6">
           <div className="flex justify-center gap-2 space-x-5 text-gray-800 dark:text-gray-300">
             <a
               href="https://twitter.com/digimoda_kh"

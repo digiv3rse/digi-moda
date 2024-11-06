@@ -66,7 +66,7 @@ export default function NavbarAlt(props) {
     {
       label: "Terms and Conditions",
       href: "/terms"
-    },
+    }
   ];
 
   return (

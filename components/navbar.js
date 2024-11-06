@@ -63,7 +63,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="md:text-lg px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200"
+                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-lg"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -143,7 +143,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="md:text-lg px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200"
+                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-lg"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           <span> {item.label}</span>

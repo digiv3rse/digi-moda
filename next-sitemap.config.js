@@ -5,8 +5,6 @@ module.exports = {
   changefreq: "daily",
   priority: 0.7,
   sitemapSize: 5000,
-  generateRobotsTxt: true,
-  alternateRefs: [
-    "https://digimoda.site/sitemap-0.xml",
-  ]
+  generateRobotsTxt: false,
+  alternateRefs: ["https://digimoda.site/sitemap-0.xml"]
 };

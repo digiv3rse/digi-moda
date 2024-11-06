@@ -5,7 +5,6 @@ import { notFound } from "next/navigation";
 import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
-
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
 
@@ -104,6 +103,8 @@ export default function Post(props) {
           {post.author && <AuthorCard author={post.author} />}
         </article>
       </Container>
+      <div className="items-center justify-center">
+      </div>
     </>
   );
 }

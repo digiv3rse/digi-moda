@@ -1,5 +1,5 @@
 ---
-date: '2024-06-5T10:50:54.000Z'
+date: "2024-06-5T10:50:54.000Z"
 title: Biggest Fashion Brands Are Preparing For a Crypto Revolution
 tagline: fashion, technology
 preview: >-
