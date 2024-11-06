@@ -17,9 +17,3 @@ What distinguishes **DiGi Moda** is our unwavering dedication to showcasing fash
 to not only featuring the latest trends but also highlighting the stories, ideas, and voices that shape them.
 From up-and-coming designers with fresh perspectives to individuals who challenge conventional style norms,
 our magazine serves as a platform for those who embrace uniqueness.
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6589975999855442"
-     crossorigin="anonymous"></script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6589975999855442"
-     crossorigin="anonymous"></script>
