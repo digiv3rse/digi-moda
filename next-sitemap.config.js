@@ -6,7 +6,6 @@ module.exports = {
   sitemapSize: 5000,
   generateRobotsTxt: true,
   exclude: ["/api"],
-  alternateRefs: ["https://digimoda.site/sitemap-0.xml"],
   robotsTxtOptions: {
     policies: [
       {
@@ -19,4 +18,7 @@ module.exports = {
       }
     ]
   },
+  additionalSitemaps: [
+    "https://digimoda.site/sitemap-0.xml"
+  ]
 };
