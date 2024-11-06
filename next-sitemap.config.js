@@ -1,10 +1,22 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://digimoda.site",
-  generateRobotsTxt: true,
   changefreq: "daily",
   priority: 0.7,
   sitemapSize: 5000,
-  generateRobotsTxt: false,
-  alternateRefs: ["https://digimoda.site/sitemap-0.xml"]
+  generateRobotsTxt: true,
+  exclude: ["/api"],
+  alternateRefs: ["https://digimoda.site/sitemap-0.xml"],
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+      {
+        userAgent: "Googlebot",
+        allow: ["/"],
+      }
+    ]
+  },
 };

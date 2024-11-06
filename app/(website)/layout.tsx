@@ -52,6 +52,19 @@ async function sharedMetaData(params) {
       locale: "en_US",
       type: "website"
     },
+    robots: {
+      index: false,
+      follow: true,
+      nocache: true,
+      googleBot: {
+        index: true,
+        follow: false,
+        noimageindex: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     twitter: {
       title: settings?.title || "DiGi Moda",
       card: "summary_large_image",
