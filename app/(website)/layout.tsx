@@ -2,7 +2,7 @@ import { getSettings } from "@/lib/sanity/client";
 import Footer from "@/components/footer";
 import { urlForImage } from "@/lib/sanity/image";
 import Navbar from "@/components/navbar";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import Head from "next/head";
 
@@ -128,6 +128,7 @@ export default async function Layout({ children, params }) {
         <div>{children}</div>
         <Footer {...settings} />
         <GoogleAnalytics gaId="G-97HEWFM6VB" />
+        <GoogleTagManager gtmId="AW-16773332730" />
       </html>
     </>
   );
