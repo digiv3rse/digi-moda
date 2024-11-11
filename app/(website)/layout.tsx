@@ -121,8 +121,7 @@ export default async function Layout({ children, params }) {
           />
         </Head>
         <Script
-          async
-          src="https://fundingchoicesmessages.google.com/i/pub-6589975999855442?ers=1"
+          async src="https://fundingchoicesmessages.google.com/i/pub-6589975999855442?ers=1"
           security="worker"
         />
         <Navbar {...settings} />
