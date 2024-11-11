@@ -128,7 +128,7 @@ export default async function Layout({ children, params }) {
         <div>{children}</div>
         <Footer {...settings} />
         <GoogleAnalytics gaId="G-97HEWFM6VB" />
-        <GoogleTagManager gtmId="AW-16773332730" />
+        <GoogleTagManager gtmId="GTM-P55JGG4P" />
       </html>
     </>
   );
