@@ -40,7 +40,7 @@ export default function PostAlt({
                 })}
                 alt={post.mainImage.alt || "Thumbnail"}
                 priority={preloadImage ? true : false}
-                className="object-cover transition-all"
+                className="object-cover object-top transition-all"
                 fill
                 sizes="80vw"
               />

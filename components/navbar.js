@@ -79,8 +79,8 @@ export default function Navbar(props) {
                         src="/img/logo-light.svg"
                         alt="Logo"
                         priority={true}
-                        width={220}
-                        height={100}
+                        width={240}
+                        height={120}
                         sizes="(max-width: 640px)"
                       />
                     ) : (
@@ -97,8 +97,8 @@ export default function Navbar(props) {
                         src="/img/logo-dark.svg"
                         alt="Logo"
                         priority={true}
-                        width={220}
-                        height={100}
+                        width={240}
+                        height={120}
                         sizes="(max-width: 640px)"
                       />
                     ) : (
