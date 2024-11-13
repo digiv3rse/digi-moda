@@ -13,12 +13,10 @@ async function sharedMetaData(params) {
     // enable this for resolving opengraph image
     metadataBase: new URL(settings.url),
     title: {
-      default:
-        settings?.title ||
+      default: settings?.title ||
         "DiGi Moda - Digital Fashion Magazine for new generations"
     },
-    description:
-      settings?.description ||
+    description: settings?.description ||
       "DiGi Moda - Stay ahead of the game with our latest updates, trend reports, and insider tips. Join our fashion-forward community and let's explore the glamorous side of life!",
     keywords: [
       "DiGi Moda",
@@ -36,14 +34,12 @@ async function sharedMetaData(params) {
     manifest: "https://digimoda.site/manifest.json",
     openGraph: {
       title: "DiGi Moda",
-      description:
-        "DiGi Moda - Digital Fashion Magazine for new generations",
+      description: "DiGi Moda - Digital Fashion Magazine for new generations",
       url: "https://digimoda.site/",
       siteName: "DiGi Moda",
       images: [
         {
-          url:
-            urlForImage(settings?.openGraphImage)?.src ||
+          url: urlForImage(settings?.openGraphImage)?.src ||
             "/opengraph.png",
           width: 800,
           height: 600
@@ -68,8 +64,7 @@ async function sharedMetaData(params) {
     twitter: {
       title: settings?.title || "DiGi Moda",
       card: "summary_large_image",
-      description:
-        "DiGi Moda - Stay ahead of the game with our latest updates, trend reports, and insider tips. Join our fashion-forward community and let's explore the glamorous side of life!",
+      description: "DiGi Moda - Stay ahead of the game with our latest updates, trend reports, and insider tips. Join our fashion-forward community and let's explore the glamorous side of life!",
       images: "/img/opengraph.png"
     },
     icons: {
@@ -121,9 +116,11 @@ export default async function Layout({ children, params }) {
           />
         </Head>
         <Script
-          async src="https://fundingchoicesmessages.google.com/i/pub-6589975999855442?ers=1"
-          security="worker"
-        />
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5734678432698312"
+          id="script-component-ad"
+          strategy="lazyOnload"
+         />
         <Navbar {...settings} />
         <div>{children}</div>
         <Footer {...settings} />

@@ -7,6 +7,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
+import AdBanner from "@/components/adBanner";
 
 export default function Post(props) {
   const { loading, post } = props;
@@ -17,13 +18,13 @@ export default function Post(props) {
     notFound();
   }
 
-  const imageProps = post?.mainImage
-    ? urlForImage(post?.mainImage)
-    : null;
+  const imageProps = post?.mainImage ?
+    urlForImage(post?.mainImage) :
+    null;
 
-  const AuthorimageProps = post?.author?.image
-    ? urlForImage(post.author.image)
-    : null;
+  const AuthorimageProps = post?.author?.image ?
+    urlForImage(post.author.image) :
+    null;
 
   return (
     <>
@@ -87,12 +88,15 @@ export default function Post(props) {
           />
         )}
       </div>
-
+      
+      <AdBanner className="py-4" />
+      
       <Container>
         <article className="mx-auto max-w-screen-md ">
           <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
             {post.body && <PortableText value={post.body} />}
           </div>
+          <AdBanner className="py-4" />
           <div className="mb-7 mt-7 flex justify-center">
             <Link
               href="/"
