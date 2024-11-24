@@ -9,6 +9,7 @@
     "start": "next start",
     "sanity": "sanity dev",
     "lint": "next lint",
+    "sanity-export": "sanity dataset export digimoda lib/sanity/data/digimoda.tar.gz",
     "lint-fix": "next lint --fix"
   },
   "dependencies": {
