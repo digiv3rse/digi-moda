@@ -6,8 +6,8 @@ import { myLoader } from "@/utils/all";
 
 export default function Footer() {
   return (
-    <div className="mt-auto">
-      <Container className="mx-auto mt-16 items-center justify-center border-t border-gray-100 py-8 dark:border-gray-800">
+    <div className="mx-auto">
+      <Container className="w-full mx-auto mt-14 items-center justify-center border-t border-gray-100 py-8 dark:border-gray-800">
         <div className="mt-4 grid grid-cols-1 gap-4 px-4 md:px-6">
           <div className="flex flex-row justify-center">
             <Link

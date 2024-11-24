@@ -73,14 +73,14 @@ export default function Navbar(props) {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
+                  <Link href="/" className="w-[130px] dark:hidden">
                     {props.logo ? (
                       <Image
                         src="/img/logo-light.svg"
                         alt="Logo"
                         priority={true}
-                        width={240}
-                        height={120}
+                        width={260}
+                        height={130}
                         sizes="(max-width: 640px)"
                       />
                     ) : (
@@ -91,14 +91,14 @@ export default function Navbar(props) {
                   </Link>
                   <Link
                     href="/"
-                    className="hidden w-[120px] dark:block">
+                    className="hidden w-[130px] dark:block">
                     {props.logoalt ? (
                       <Image
                         src="/img/logo-dark.svg"
                         alt="Logo"
                         priority={true}
-                        width={240}
-                        height={120}
+                        width={260}
+                        height={130}
                         sizes="(max-width: 640px)"
                       />
                     ) : (
