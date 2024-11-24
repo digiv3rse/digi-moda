@@ -115,12 +115,6 @@ export default async function Layout({ children, params }) {
             content="width=device-width, initial-scale=1"
           />
         </Head>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5734678432698312"
-          id="script-component-ad"
-          strategy="lazyOnload"
-         />
         <Navbar {...settings} />
         <div>{children}</div>
         <Footer {...settings} />
