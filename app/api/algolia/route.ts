@@ -1,4 +1,4 @@
-import algoliasearch from 'algoliasearch'
+import { algoliasearch } from 'algoliasearch'
 import { createClient, type SanityDocumentStub } from '@sanity/client'
 import { NowRequest, NowResponse } from '@vercel/node'
 import indexer from 'sanity-algolia'
