@@ -24,4 +24,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withHighlightConfig(nextConfig);
+export default withHighlightConfig(nextConfig);
