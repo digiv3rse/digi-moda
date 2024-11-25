@@ -19,7 +19,7 @@ export default function Post(props) {
 
   const imageProps = post?.mainImage ?
     urlForImage(post?.mainImage) :
-    null;bg-origin-padding
+    null;
 
   const AuthorimageProps = post?.author?.image ?
     urlForImage(post.author.image) :
@@ -75,7 +75,7 @@ export default function Post(props) {
         </div>
       </Container>
 
-      <div className="relative z-0 max-w-screen-lg mx-auto overflow-hidden aspect-video lg:rounded-lg">
+      <div className="relative z-0 max-w-screen-lg px-6 md:px-10 lg:px-12 mx-auto overflow-hidden aspect-video lg:rounded-lg">
         {imageProps && (
           <Image
             src={imageProps.src}
