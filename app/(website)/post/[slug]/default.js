@@ -75,7 +75,7 @@ export default function Post(props) {
         </div>
       </Container>
 
-      <div className="relative z-0 max-w-screen-lg px-6 lg:px-10 mx-auto overflow-hidden aspect-video lg:rounded-lg">
+      <div className="relative z-0 max-w-screen-lg px-6 lg:px-10 mx-auto bg-origin-padding overflow-hidden aspect-video lg:rounded-lg">
         {imageProps && (
           <Image
             src={imageProps.src}
@@ -83,7 +83,7 @@ export default function Post(props) {
             loading="eager"
             fill
             sizes="100vw"
-            className="object-cover bg-origin-padding"
+            className="object-cover"
           />
         )}
       </div>

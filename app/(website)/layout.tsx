@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import Head from "next/head";
-
+import { HighlightInit } from "@highlight-run/next/client";
 async function sharedMetaData(params) {
   const settings = await getSettings();
 
@@ -108,6 +108,16 @@ export default async function Layout({ children, params }) {
   const settings = await getSettings();
   return (
     <>
+      <HighlightInit
+				projectId={'lgx79nzd'}
+				serviceName="digi-moda"
+				tracingOrigins
+				networkRecording={{
+					enabled: true,
+					recordHeadersAndBody: true,
+					urlBlocklist: [],
+				}}
+			/>
       <html lang="en">
         <Head>
           <meta
