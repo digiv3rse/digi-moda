@@ -34,6 +34,10 @@ export default function NavbarAlt(props) {
           path: "/category/beauty"
         },
         {
+          title: "Celebrity",
+          path: "/category/celebrity"
+        },
+        {
           title: "Culture",
           path: "/category/culture"
         },
