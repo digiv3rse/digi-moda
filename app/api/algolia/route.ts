@@ -7,7 +7,7 @@ const algolia = algoliasearch(
   '71SBE8DDO5',
   process.env.ALGOLIA_ADMIN_API_KEY
 )
-import  { VercelRequest, VercelResponse } from '@vercel/node'
+
 const sanity = createClient({
   projectId: process.env.SANITY_API_PROJECT_ID,
   dataset: process.env.SANITY_STUDIO_DATASET,
@@ -20,7 +20,7 @@ const sanity = createClient({
  *  This function receives webhook POSTs from Sanity and updates, creates or
  *  deletes records in the corresponding Algolia indices.
  */
-export default function handler(req: VercelResponse, res: VercelResponse) {
+const handler = (req: VercelResponse, res: VercelResponse) => {
   // Tip: Add webhook secrets to verify that the request is coming from Sanity.
   // See more at: https://www.sanity.io/docs/webhooks#bfa1758643b3
   if (req.headers['content-type'] !== 'application/json') {
@@ -71,14 +71,6 @@ export default function handler(req: VercelResponse, res: VercelResponse) {
           return document
       }
     },
-    // Visibility function (optional).
-    //
-    // The third parameter is an optional visibility function. Returning `true`
-    // for a given document here specifies that it should be indexed for search
-    // in Algolia. This is handy if for instance a field value on the document
-    // decides if it should be indexed or not. This would also be the place to
-    // implement any `publishedAt` datetime visibility rules or other custom
-    // visibility scheme you may be using.
     (document: SanityDocumentStub) => {
       if (document.hasOwnProperty('isHidden')) {
         return !document.isHidden
@@ -101,3 +93,5 @@ export default function handler(req: VercelResponse, res: VercelResponse) {
       }
     })
 }
+
+export default handler;
