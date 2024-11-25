@@ -2,6 +2,7 @@ import "@/styles/tailwind.css";
 import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
+import { HighlightInit } from "@highlight-run/next/client";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +20,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <>
+    <HighlightInit
+    	 projectId={'lgx79nzd'}
+       serviceName="digi-moda"
+    	 tracingOrigins
+    	 networkRecording={{
+    			enabled: true,
+    			recordHeadersAndBody: true,
+    			urlBlocklist: [],
+    	  }}
+     />
     <html
       lang="en"
       suppressHydrationWarning
@@ -27,5 +39,6 @@ export default function RootLayout({
         <Providers>{children}</Providers>
       </body>
     </html>
+    </>
   );
 }
