@@ -1,7 +1,10 @@
+import { withHighlightConfig } from "@highlight-run/next/config";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     nextScriptWorkers: true,
+    instrumentationHook: true,
   },
   reactStrictMode: true,
   swcMinify: true,
@@ -21,4 +24,4 @@ const nextConfig = {
   }
 };
 
-module.exports = nextConfig;
+module.exports = withHighlightConfig(nextConfig);
