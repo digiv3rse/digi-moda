@@ -3,6 +3,7 @@ import { Providers } from "./providers";
 import { cx } from "@/utils/all";
 import { Inter, Lora } from "next/font/google";
 import { HighlightInit } from "@highlight-run/next/client";
+import { ErrorBoundary } from "@/components/error-boundary";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,9 +36,11 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       className={cx(inter.variable, lora.variable)}>
-      <body className="text-gray-800 antialiased dark:bg-black dark:text-gray-400">
-        <Providers>{children}</Providers>
-      </body>
+      <ErrorBoundary>
+        <body className="text-gray-800 antialiased dark:bg-black dark:text-gray-400">
+          <Providers>{children}</Providers>
+        </body>
+      </ErrorBoundary>
     </html>
     </>
   );
