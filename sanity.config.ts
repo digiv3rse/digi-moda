@@ -41,13 +41,6 @@ export default defineConfig({
     cloudinaryAssetSourcePlugin(),
     media(),
   ],
-  form: {
-    file: {
-      assetSources: previousAssetSources => {
-        return previousAssetSources.filter(assetSource => assetSource !== mediaAssetSource)
-      }
-    }
-  },
   schema: {
     types: schemaTypes
   }
