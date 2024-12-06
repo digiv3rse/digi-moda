@@ -9,6 +9,7 @@ import { urlForImage } from "@/lib/sanity/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { myLoader } from "@/utils/all";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -41,6 +42,7 @@ export default function Navbar(props) {
     }
   ];
 
+  const src = "/digi-moda.lottie"
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
@@ -75,15 +77,19 @@ export default function Navbar(props) {
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-[130px] dark:hidden">
                     {props.logo ? (
-                      <Image
-                        src="/img/logo-light.svg"
-                        alt="Logo"
-                        priority={true}
-                        width={260}
-                        height={130}
-                        sizes="(max-width: 640px)"
-                      />
-                    ) : (
+                        <DotLottieReact
+                          style={{
+                            minWidth: "640px",
+                          }}
+                          src={src}
+                          backgroundColor="transparent"
+                          loop
+                          autoplay
+                          renderConfig={{
+                            autoResize: true,
+                          }}
+                        />
+                      ) : (
                       <span className="block text-center">
                         DiGi Moda
                       </span>
