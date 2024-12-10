@@ -69,20 +69,55 @@ async function sharedMetaData(params) {
     icons: {
       icon: [
         { url: "/favicon.ico" },
-        new URL("/favicon.ico", "https://digimoda.site"),
+        new URL("/favicon.ico", "https://digimoda.site/favicon.ico"),
         { url: "/icons/favicon-32x32.png", sizes: "32x32" },
         { url: "/icons/favicon-16x16.png", sizes: "16x16" }
       ],
       other: [
         {
-          rel: "apple-touch-icon",
-          sizes: "180x180",
-          url: "/icons/apple-touch-icon.png"
+          rel: "apple-icon",
+          sizes: "57x57",
+          url: "/icons/apple-icon-57x57.png"
         },
         {
-          rel: "android-chrome-512x512.png",
-          sizes: "512x51",
-          url: "/icons/android-chrome-512x512.png"
+          rel: "apple-icon",
+          sizes: "60x60",
+          url: "/icons/apple-icon-60x60.png"
+        },
+        {
+          rel: "apple-icon",
+          sizes: "72x72",
+          url: "/icons/apple-icon-72x72.png"
+        },
+        {
+          rel: "apple-icon",
+          sizes: "76x76",
+          url: "/icons/apple-icon-76x76.png"
+        },
+        {
+          rel: "apple-icon",
+          sizes: "114x114",
+          url: "/icons/apple-icon-114x114.png"
+        },
+        {
+          rel: "apple-icon",
+          sizes: "120x120",
+          url: "/icons/apple-icon-120x120.png"
+        },
+                {
+          rel: "apple-icon",
+          sizes: "144x144",
+          url: "/icons/apple-icon-144x144.png"
+        },
+        {
+          rel: "apple-icon",
+          sizes: "152x152",
+          url: "/icons/apple-icon-152x152.png"
+        },
+        {
+          rel: "apple-icon",
+          sizes: "180x180",
+          url: "/icons/apple-icon-180x180.png"
         },
         {
           rel: "android-chrome-192x192.png",
@@ -90,9 +125,14 @@ async function sharedMetaData(params) {
           url: "/icons/android-chrome-192x192.png"
         },
         {
-          rel: "mask-icon",
+          rel: "android-chrome-512x512.png",
+          sizes: "512x512",
+          url: "/icons/android-chrome-512x512.png"
+        },
+        {
+          rel: "msapplication-TileImage",
           color: "#5bbad5",
-          url: "/icons/safari-pinned-tab.svg"
+          url: "/icons/ms-icon-144x144.png"
         }
       ]
     }
