@@ -83,7 +83,7 @@ export default function Post(props) {
             loading="eager"
             fill
             sizes="100vw"
-            className="object-cover"
+            className="object-contain"
           />
         )}
       </div>
