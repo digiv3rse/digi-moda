@@ -2,7 +2,7 @@ import React from "react";
 import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
 
-const CookieConsent = () => {
+const ConsentCookie= () => {
   return (
     <CookieConsent
       location="bottom"
@@ -32,4 +32,4 @@ const CookieConsent = () => {
   );
 };
 
-export default CookieConsent;
+export default ConsentCookie;

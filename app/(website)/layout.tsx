@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import Head from "next/head";
-import CookieConsent from "@/components/cookiesConsent";
+import ConsentCookie from "@/components/cookiesConsent";
 
 async function sharedMetaData(params) {
   const settings = await getSettings();
@@ -158,7 +158,7 @@ export default async function Layout({ children, params }) {
         </Head>
         <Navbar {...settings} />
           <div>{children}</div>
-          <CookieConsent />
+          <ConsentCookie />
         <Footer {...settings} />
         <GoogleAnalytics gaId="G-1PKLPDFZ9C" />
       </html>
