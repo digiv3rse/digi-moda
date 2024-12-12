@@ -4,18 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CookieConsent = () => {
-  const [consent, setConsent] = useState(false);
+  const [showConsent, setShowConsent] = useState(false);
   const consent = Cookies.get("consent");
   Cookies.set("consent", "true", { expires: 365 }); // Expires in 1 year
   Cookies.remove("consent");
 
   const handleAccept = () => {
-    setConsent(true);
+    setShowConsent(true);
     // Set cookie or perform other actions
   };
 
   const handleDecline = () => {
-    setConsent(false);
+    setShowConsent  (false);
     // Remove cookie or perform other actions
   };
 
