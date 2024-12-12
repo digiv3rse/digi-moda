@@ -5,6 +5,8 @@ import Navbar from "@/components/navbar";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import Head from "next/head";
+import CookieConsent from "@/components/cookiesConsent";
+
 async function sharedMetaData(params) {
   const settings = await getSettings();
 
@@ -104,7 +106,7 @@ async function sharedMetaData(params) {
           sizes: "120x120",
           url: "/icons/apple-icon-120x120.png"
         },
-                {
+        {
           rel: "apple-icon",
           sizes: "144x144",
           url: "/icons/apple-icon-144x144.png"
@@ -155,7 +157,8 @@ export default async function Layout({ children, params }) {
           />
         </Head>
         <Navbar {...settings} />
-        <div>{children}</div>
+          <div>{children}</div>
+          <CookieConsent />
         <Footer {...settings} />
         <GoogleAnalytics gaId="G-1PKLPDFZ9C" />
       </html>
