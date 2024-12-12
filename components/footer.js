@@ -7,46 +7,51 @@ import { myLoader } from "@/utils/all";
 export default function Footer() {
   return (
     <div className="mx-auto">
-      <Container className="w-full mx-auto mt-14 items-center justify-center border-t border-gray-100 py-8 dark:border-gray-800">
-        <div className="mt-4 grid grid-cols-1 gap-4 px-4 md:px-6">
+      <Container className="items-center justify-center w-full py-8 mx-auto border-t border-gray-100 mt-14 dark:border-gray-800">
+        <div className="grid grid-cols-1 gap-4 px-4 mt-4 md:px-6">
           <div className="flex flex-row justify-center">
             <Link
               href="/"
-              className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
+              className="px-4 py-2 text-sm text-gray-500 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
               Home
             </Link>
             <Link
               href="/about"
-              className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
+              className="px-4 py-2 text-sm text-gray-500 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
               About
             </Link>
             <Link
               href="/contact"
-              className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
+              className="px-4 py-2 text-sm text-gray-500 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
               Contact
+            </Link>
+            <Link
+              href="/gallery"
+              className="px-4 py-2 text-sm text-gray-500 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-300">
+              Gallery
             </Link>
           </div>
         </div>
-        <div className="mt-4 grid grid-cols-1 gap-4 px-4 md:px-6">
+        <div className="grid grid-cols-1 gap-4 px-4 mt-4 md:px-6">
           <div className="flex flex-row justify-center">
             <Link
-              href="https://kimhabork.site"
-              className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-800 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
+              href="/portfolio"
+              className="px-4 py-2 text-sm text-gray-800 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
               Portfolio
             </Link>
             <Link
               href="/terms"
-              className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-800 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
+              className="px-4 py-2 text-sm text-gray-800 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
               Terms and Conditions
             </Link>
             <Link
               href="/privacy"
-              className="dark:focus:bg-trueGray-700 rounded-md px-4 py-2 text-gray-800 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
+              className="px-4 py-2 text-sm text-gray-800 rounded-md md:text-xl dark:focus:bg-trueGray-700 hover:text-indigo-500 focus:bg-cyan-500 focus:text-indigo-500 focus:outline-none dark:text-gray-200">
               Privacy Policy
             </Link>
           </div>
         </div>
-        <div className="mt-4 px-4 md:px-6">
+        <div className="px-4 mt-4 md:px-6">
           <div className="flex justify-center gap-2 space-x-5 text-gray-800 dark:text-gray-300">
             <a
               href="https://twitter.com/digimoda_kh"
@@ -71,8 +76,8 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="mx-auto mt-2 max-w-screen-lg content-center items-center justify-center px-8 pb-5 pt-2 text-gray-800 dark:text-gray-300 lg:py-8 xl:px-5">
-          <div className="text-md py-5 text-center">
+        <div className="items-center content-center justify-center max-w-screen-lg px-8 pt-2 pb-5 mx-auto mt-2 text-gray-800 dark:text-gray-300 lg:py-8 xl:px-5">
+          <div className="py-5 text-center text-md md:text-xl">
             Copyright © {new Date().getFullYear()}. by{" "}
             <a
               href="https://digimoda.site/"
@@ -81,7 +86,7 @@ export default function Footer() {
               DiGi Moda. All rights reserved.
             </a>
           </div>
-          <div className="flex w-full content-center items-center justify-center pt-5">
+          <div className="flex items-center content-center justify-center w-full pt-5">
             <ThemeSwitch />
           </div>
         </div>

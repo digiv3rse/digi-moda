@@ -5,13 +5,13 @@ import Loading from "@/components/loading";
 
 export const dynamic = "force-dynamic";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
 export default async function PostsPage({ searchParams }) {
   return (
     <>
       <Container className="relative">
-        <h1 className="text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
+        <h1 className="text-3xl font-semibold tracking-tight text-center dark:text-white lg:text-4xl lg:leading-snug">
           Posts
         </h1>
         <div className="text-center">

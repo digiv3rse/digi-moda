@@ -28,3 +28,4 @@ our magazine serves as a platform for those who embrace uniqueness.
 
   gtag('config', 'AW-16773332730');
 </script>
+

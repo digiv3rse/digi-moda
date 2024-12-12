@@ -33,11 +33,11 @@ export default function Navbar(props) {
     },
     {
       label: "Portfolio",
-      href: "https://kimhabork.site"
+      href: "/portfolio"
     },
     {
       label: "Gallery",
-      href: "https://gallery.digimoda.site"
+      href: "/gallery"
     }
   ];
 
@@ -50,7 +50,7 @@ export default function Navbar(props) {
           {({ open }) => (
             <>
               <div className="flex flex-wrap justify-between md:flex-nowrap md:gap-10">
-                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
+                <div className="flex-col items-center justify-start order-1 hidden w-full md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -63,7 +63,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-lg"
+                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-xl"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           {item.label}
@@ -72,7 +72,7 @@ export default function Navbar(props) {
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex w-full items-center justify-between md:w-auto">
+                <div className="flex items-center justify-between w-full md:w-auto">
                   <Link href="/" className="w-[130px] dark:hidden">
                     {props.logo ? (
                       <Image
@@ -109,9 +109,9 @@ export default function Navbar(props) {
                   </Link>
                   <Disclosure.Button
                     aria-label="Toggle Menu"
-                    className="ml-auto rounded-md px-2 py-1 text-gray-500 focus:text-blue-700 focus:outline-none dark:text-gray-300 md:hidden ">
+                    className="px-2 py-1 ml-auto text-gray-500 rounded-md focus:text-blue-700 focus:outline-none dark:text-gray-300 md:hidden ">
                     <svg
-                      className="h-6 w-6 fill-current"
+                      className="w-6 h-6 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24">
                       {open && (
@@ -130,7 +130,7 @@ export default function Navbar(props) {
                     </svg>
                   </Disclosure.Button>
                 </div>
-                <div className="order-2 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
+                <div className="flex-col items-center justify-start order-2 hidden w-full md:order-none md:flex md:w-auto md:flex-1 md:flex-row">
                   {rightmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
@@ -143,7 +143,7 @@ export default function Navbar(props) {
                         <Link
                           href={item.href}
                           key={`${item.label}${index}`}
-                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-lg"
+                          className="px-5 py-2 text-sm font-medium text-gray-800 hover:text-blue-500 dark:text-gray-200 md:text-xl"
                           target={item.external ? "_blank" : ""}
                           rel={item.external ? "noopener" : ""}>
                           <span> {item.label}</span>
@@ -159,7 +159,7 @@ export default function Navbar(props) {
                 </div>
               </div>
               <Disclosure.Panel>
-                <div className="order-2 -ml-4 mt-4 flex w-full flex-col items-center justify-start md:hidden">
+                <div className="flex flex-col items-center justify-start order-2 w-full mt-4 -ml-4 md:hidden">
                   {mobilemenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
