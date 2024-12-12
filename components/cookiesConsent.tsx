@@ -23,10 +23,9 @@ const CookieConsent = () => {
   return (
     <div>
       <div className="container mx-auto max-w-[20%] mt-[10rem] px-2 flex justify-center items-center">
-        <div style="background-color:rgb(0, 0, 0)">
+        <div className="bg-black">
           <div
-            className="w-72 bg-gray-200 rounded-xl shadow-md p-6"
-            style="cursor: auto;"
+            className="w-72 bg-gray-200 cursor-auto rounded-xl shadow-md p-6"
           >
             <div className="w-16 mx-auto relative -mt-10 mb-3">
               <Image
@@ -45,7 +44,7 @@ const CookieConsent = () => {
               Privacy Policy
             </Link>
             <div className="flex items-center justify-between pt-4 pb-2">
-              {!consent && (
+              {!showConsent && (
                 <div className="w-full flex flex-wrap justify-evenly">
                   <button
                     type="button"
