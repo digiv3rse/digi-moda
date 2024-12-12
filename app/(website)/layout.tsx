@@ -141,6 +141,10 @@ async function sharedMetaData(params) {
 }
 
 export async function generateMetadata({ params }) {
+  return await sharedMetaData(params);
+}
+
+export default async function Layout({ children, params }) {
   const handleAccept = () => {
     console.log('Cookies accepted')
     // Implement your cookie acceptance logic here
@@ -150,10 +154,6 @@ export async function generateMetadata({ params }) {
     console.log('Cookies rejected')
     // Implement your cookie rejection logic here
   }
-  return await sharedMetaData(params);
-}
-
-export default async function Layout({ children, params }) {
   const settings = await getSettings();
   return (
     <>
