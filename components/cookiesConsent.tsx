@@ -69,3 +69,5 @@ const CookieConsent = () => {
     </div>
   );
 };
+
+export default CookieConsent;
