@@ -6,17 +6,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 import Head from "next/head";
 import CookieConsentModal from "@/components/CookieConsentModal";
-
 async function sharedMetaData(params) {
-  const handleAccept = () => {
-    console.log('Cookies accepted')
-    // Implement your cookie acceptance logic here
-  }
-
-  const handleReject = () => {
-    console.log('Cookies rejected')
-    // Implement your cookie rejection logic here
-  }
   const settings = await getSettings();
 
   return {
@@ -151,6 +141,15 @@ async function sharedMetaData(params) {
 }
 
 export async function generateMetadata({ params }) {
+  const handleAccept = () => {
+    console.log('Cookies accepted')
+    // Implement your cookie acceptance logic here
+  }
+
+  const handleReject = () => {
+    console.log('Cookies rejected')
+    // Implement your cookie rejection logic here
+  }
   return await sharedMetaData(params);
 }
 
