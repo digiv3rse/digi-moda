@@ -22,7 +22,7 @@ const CookieConsent = () => {
 
   return (
     <div>
-      <div className="container mx-auto max-w-[20%] mt-[10rem] px-2 flex justify-center items-center">
+      <div className="container mx-auto max-w-1/2 md:max-w-1/3 lg:max-w-[20%] mt-[5rem] px-2 flex justify-center items-center">
         <div className="bg-black">
           <div
             className="w-72 bg-gray-200 cursor-auto rounded-xl shadow-md p-6"
@@ -30,7 +30,7 @@ const CookieConsent = () => {
             <div className="w-16 mx-auto relative -mt-10 mb-3">
               <Image
                 className="-mt-1"
-                src="https://www.svgrepo.com/show/30963/cookie.svg"
+                src="/cookie.svg"
                 alt="Cookie Icon SVG"
               />
             </div>
