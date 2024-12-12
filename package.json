@@ -57,6 +57,7 @@
     "sanity-plugin-cloudinary": "^1.1.4",
     "styled-components": "^6.1.8",
     "swr": "^2.2.4",
+    "tailwind-merge": "^2..5.5",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
