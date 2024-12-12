@@ -13,7 +13,7 @@ import {
 import { useCookieConsent } from '../hooks/useCookieConsent'
 import { CookieConsentModalProps } from '../types/cookieConsent'
 
-export function CookieConsentModal({ onAccept, onReject }: CookieConsentModalProps) {
+export default function CookieConsentModal({ onAccept, onReject }: CookieConsentModalProps) {
   const { consentGiven, giveConsent } = useCookieConsent()
   const [open, setOpen] = useState(false)
 
