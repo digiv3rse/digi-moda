@@ -1,7 +1,5 @@
-import Category from "./default";
-import { getTopCategories } from "@/lib/sanity/client";
+import CategoriesList from "@/components/CategoriesList";
 
-export default async function CategoriesPage() {
-    const category = await getTopCategories();
-    return <Category posts={category.posts} />;
+export default async function Categories() {
+    return <CategoriesPage />;
 }

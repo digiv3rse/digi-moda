@@ -3,9 +3,7 @@ import Container from "@/components/container";
 import PostList from "@/components/postlist";
 import CategoryLabel from "@/components/blog/category";
 
-export default function Category({
-  categories,
-}) {
+export default function CategoriesPage({ categories }) {
   return (
     <>
       {categories && (
