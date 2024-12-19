@@ -158,7 +158,7 @@ export default async function Layout({ children, params }) {
         <Navbar {...settings} />
           <div>{children}</div>
         <Footer {...settings} />
-        <GoogleAnalytics gaId="G-1PKLPDFZ9C" />
+        <GoogleAnalytics gaId="G-PN441RZLF5" />
       </html>
     </>
   );
