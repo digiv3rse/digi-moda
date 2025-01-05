@@ -8,7 +8,7 @@ import { Button } from './ui/button'
 
 interface CookiePreferencesModalProps {
   isOpen: boolean
-  onClose: (preferences: Record<string, boolean> | null) => void
+  onClose: (preferences: Record < string, boolean > | null) => void
 }
 
 export default function CookiePreferencesModal({ isOpen, onClose }: CookiePreferencesModalProps) {
@@ -85,4 +85,3 @@ export default function CookiePreferencesModal({ isOpen, onClose }: CookiePrefer
     </Dialog>
   )
 }
-
