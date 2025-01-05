@@ -5,12 +5,12 @@ import Image from "next/image";
 export default function GalleryPage() {
   return (
     <>
-      <Container className="flex flex-col justify-center h-full py-6 itemsc-center md:py-10 lg:py-14">
-        <div className="w-full p-6 mx-auto md:p-10 lg:p-14">
+      <Container className="flex w-full mx-auto justify-center py-6 items-center md:py-10 lg:py-14">
+        <div className="w-full h-full">
           <Image
             src="/img/coming-soon-2.png"
             alt="Coming Soon"
-            className="object-cover rounded-xl"
+            className="object-cover w-full rounded-xl"
           />
         </div>
        <Link href="/" className="flex items-center justify-center py-6 mx-auto text-center">
