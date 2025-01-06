@@ -14,7 +14,7 @@ export default function GalleryPage() {
           />
         </div>
         <Link href="/" className="flex items-center justify-center py-6 mx-auto text-center">
-          <button type="button" class="bg-[#5377b3] rounded-full p-4 shadow-lg text-xl font-medium  hover:bg-pink-600">Back Home</button>
+          <button type="button" class="bg-[#5377b3] rounded-lg p-4 shadow-lg text-xl font-medium  hover:bg-pink-600">Back Home</button>
         </Link>
       </Container>
     </>
