@@ -1,79 +1,49 @@
-'use client'
+"use client"
 
 import { useState, useEffect } from 'react'
-import { X } from 'lucide-react'
-import { Button } from './ui/button'
-import { CookiePreferencesModal } from './cookie-modal'
+import { Button } from "./ui/button"
+import { cn } from "@/utils/utils"
 
 export function CookieConsent() {
   const [isVisible, setIsVisible] = useState(false)
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!localStorage.getItem('cookieConsent')) {
-        setIsVisible(true)
-      }
-    }, 1000)
-
-    return () => clearTimeout(timer)
+    const consent = localStorage.getItem('cookieConsent')
+    if (consent === null) {
+      setTimeout(() => setIsVisible(true), 500) // Delay to allow for initial page load
+    }
   }, [])
 
-  const acceptAll = () => {
-    localStorage.setItem('cookieConsent', JSON.stringify({
-      necessary: true,
-      analytics: true,
-      marketing: true,
-      preferences: true
-    }))
+  const handleAccept = () => {
+    localStorage.setItem('cookieConsent', 'accepted')
     setIsVisible(false)
   }
 
-  const customizePreferences = () => {
-    setIsModalOpen(true)
-  }
-
-  const dismiss = () => {
+  const handleDecline = () => {
+    localStorage.setItem('cookieConsent', 'declined')
     setIsVisible(false)
   }
-
-  const handleModalClose = (preferences: Record<string, boolean> | null) => {
-    setIsModalOpen(false)
-    if (preferences) {
-      localStorage.setItem('cookieConsent', JSON.stringify(preferences))
-      setIsVisible(false)
-    }
-  }
-
-  if (!isVisible) return null
 
   return (
-    <>
-      <div className="fixed bottom-0 left-0 right-0 z-50 p-3 sm:p-4 md:p-6 lg:p-8 bg-[#121212] backdrop-blur-sm border-t border-border animate-in slide-in-from-bottom drop-shadow-xl duration-500">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex-1 text-center sm:text-left">
-            <h2 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2">Cookie Notice</h2>
-            <p className="text-xs sm:text-sm text-white">
-              We use cookies to improve your experience. Choose your preferences below.
-            </p>
-          </div>
-          <div className="flex flex-col xs:flex-row gap-2 xs:items-center">
-            <Button variant="outline" size="sm" onClick={customizePreferences}>
-              Customize
-            </Button>
-            <Button size="sm" onClick={acceptAll}>Accept All</Button>
-          </div>
-          <button
-            onClick={dismiss}
-            className="absolute top-2 right-2 text-white hover:text-pink-500 transition-colors"
-            aria-label="Dismiss cookie consent"
-          >
-            <X size={20} />
-          </button>
+    <div
+      className={cn(
+        "fixed bottom-0 left-0 right-0 p-4 bg-gray-900 border-t transition-transform duration-300 ease-in-out transform",
+        isVisible ? "translate-y-0" : "translate-y-full"
+      )}
+    >
+      <div className="container mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="text-white dark:text-black">
+          <h2 className="text-lg font-semibold mb-2">Cookie Consent</h2>
+          <p className="text-sm text-slate-200">
+            We use cookies to enhance your browsing experience and analyze our traffic. 
+            Please choose to accept or decline cookies.
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-2">
+          <Button onClick={handleAccept} className="w-full sm:w-auto">Accept All</Button>
+          <Button onClick={handleDecline} variant="outline" className="w-full sm:w-auto">Decline</Button>
         </div>
       </div>
-      <CookiePreferencesModal isOpen={isModalOpen} onClose={handleModalClose} />
-    </>
-  )
+    </div>
+  );
 }
-
