@@ -29,7 +29,7 @@ export function CookiePreferencesModal({ isOpen, onClose }: CookiePreferencesMod
 
   return (
     <Dialog open={isOpen} onOpenChange={() => onClose(null)}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] bg-[#1b1b1b] drop-shadow-xl">
         <DialogHeader>
           <DialogTitle>Cookie Preferences</DialogTitle>
           <DialogDescription>
