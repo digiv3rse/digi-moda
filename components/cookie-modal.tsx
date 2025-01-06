@@ -40,14 +40,14 @@ export function CookiePreferencesModal({ isOpen, onClose }: CookiePreferencesMod
           <div className="flex items-center justify-between">
             <Label htmlFor="necessary" className="flex flex-col">
               <span>Necessary</span>
-              <span className="font-normal text-sm text-muted-foreground">Required for the website to function properly</span>
+              <span className="font-normal text-sm text-white">Required for the website to function properly</span>
             </Label>
             <Switch id="necessary" checked disabled />
           </div>
           <div className="flex items-center justify-between">
             <Label htmlFor="analytics" className="flex flex-col">
               <span>Analytics</span>
-              <span className="font-normal text-sm text-muted-foreground">Help us improve our website by collecting usage information</span>
+              <span className="font-normal text-sm text-white">Help us improve our website by collecting usage information</span>
             </Label>
             <Switch
               id="analytics"
@@ -58,7 +58,7 @@ export function CookiePreferencesModal({ isOpen, onClose }: CookiePreferencesMod
           <div className="flex items-center justify-between">
             <Label htmlFor="marketing" className="flex flex-col">
               <span>Marketing</span>
-              <span className="font-normal text-sm text-muted-foreground">Used to deliver personalized advertisements</span>
+              <span className="font-normal text-sm text-white">Used to deliver personalized advertisements</span>
             </Label>
             <Switch
               id="marketing"
@@ -69,7 +69,7 @@ export function CookiePreferencesModal({ isOpen, onClose }: CookiePreferencesMod
           <div className="flex items-center justify-between">
             <Label htmlFor="preferences" className="flex flex-col">
               <span>Preferences</span>
-              <span className="font-normal text-sm text-muted-foreground">Remember your settings and provide a better experience</span>
+              <span className="font-normal text-sm text-white">Remember your settings and provide a better experience</span>
             </Label>
             <Switch
               id="preferences"
