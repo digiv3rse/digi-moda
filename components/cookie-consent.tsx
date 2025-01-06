@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { X } from 'lucide-react'
 import { Button } from './ui/button'
-import CookiePreferencesModal from './cookie-modal'
+import { CookiePreferencesModal } from './cookie-modal'
 
 export function CookieConsent() {
   const [isVisible, setIsVisible] = useState(false)
