@@ -28,7 +28,7 @@ export default function CookiePreferencesModal({ isOpen, onClose }: CookiePrefer
   }
 
   return (
-    <Dialog className="bg-[#121212]" open={isOpen} onOpenChange={() => onClose(null)}>
+    <Dialog open={isOpen} onOpenChange={() => onClose(null)}>
       <DialogContent className="sm:max-w-[385px]">
         <DialogHeader>
           <DialogTitle>Cookie Preferences</DialogTitle>
