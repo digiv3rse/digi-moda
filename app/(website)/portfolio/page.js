@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function GalleryPage() {
   return (
     <>
-      <Container className="flex w-full mx-auto justify-center py-6 items-center md:py-10 lg:py-14">
+      <Container className="flex flex-col w-full mx-auto justify-center py-6 items-center md:py-10 lg:py-14">
         <div className="w-full h-full">
           <Image
             src="/img/coming-soon-1.png"
