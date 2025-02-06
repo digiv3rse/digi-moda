@@ -32,9 +32,9 @@ export function CookieConsent() {
       )}
     >
       <div className="container mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="text-white dark:text-black">
-          <h2 className="text-lg font-semibold mb-2">Cookie Consent</h2>
-          <p className="text-sm text-slate-200">
+        <div className="text-white dark:text-black pb-4 md:pb-6">
+          <h2 className="text-lg text-slate-200 font-semibold mb-2">Cookie Consent</h2>
+          <p className="text-sm text-slate-200 md:text-md">
             We use cookies to enhance your browsing experience and analyze our traffic. 
             Please choose to accept or decline cookies.
           </p>
